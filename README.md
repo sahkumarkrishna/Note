@@ -28,12 +28,7 @@ A clean, responsive, and minimal full-stack Notes application built with the MER
 
 Follow these instructions to run the project locally.
 
-### 1. Clone the repository
 
-```bash
-git clone <repository-url>
-cd <project-folder>
-```
 
 ### 2. Backend Setup
 
