@@ -40,7 +40,7 @@ npm install
 Create a `.env` file in the `server` directory (or use the provided one):
 ```
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/notes_db
+MONGO_URI=
 ```
 
 Start the backend server:
