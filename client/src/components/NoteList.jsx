@@ -1,7 +1,7 @@
 import React from 'react';
 import NoteItem from './NoteItem';
 
-const NoteList = ({ notes, isLoading, error, onDelete, deletingId }) => {
+const NoteList = ({ notes, isLoading, error, onDelete, onUpdate, deletingId, updatingId }) => {
   if (isLoading) {
     return (
       <div className="flex justify-center items-center py-12">
@@ -36,7 +36,9 @@ const NoteList = ({ notes, isLoading, error, onDelete, deletingId }) => {
           key={note.id} 
           note={note} 
           onDelete={onDelete} 
+          onUpdate={onUpdate}
           isDeleting={deletingId === note.id}
+          isUpdating={updatingId === note.id}
         />
       ))}
     </div>
